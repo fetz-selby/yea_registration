@@ -1,0 +1,15 @@
+<x-input-select-populate-select
+    master="{{ $regionName }}"
+    slave="{{ $districtName }}"
+    master-label="Region"
+    slave-label="District"
+    master-title="Region"
+    slave-title="District"
+    master-error-message="Please choose region"
+    slave-error-message="Please choose region"
+    default-master-value="{{ $defaultRegion }}"
+    default-slave-value="{{ $defaultDistrict }}"
+    master-input-wrapper-class="{{ $regionInputWrapperClass }}"
+    slave-input-wrapper-class="{{ $districtInputWrapperClass }}"
+    :input-values="$values"
+/>
